@@ -1,19 +1,26 @@
 # Caesar Cipher Suite (Java)
 
-An educational Java project demonstrating Caesar cipher encryption and
-basic cryptanalysis techniques.
+A Java project implementing a classical Caesar cipher system along with 
+cryptanalysis techniques to explore encryption, key recovery, and 
+limitations of substitution ciphers.
+
+## Overview
+This project demonstrates how simple encryption schemes can be systematically 
+broken. It was built to practice Java programming and understand 
+fundamental cryptography concepts, including statistical analysis of text.
 
 ## Programs Included
-- Encrypt: Encrypts plaintext using a random Caesar shift
-- BruteForce: Tries all 25 possible keys
-- FrequencyAnalysis: Estimates key using letter frequency
+- **Encrypt** – Encrypts plaintext using a randomly generated Caesar shift.
+- **BruteForce** – Tries all 25 possible keys to recover plaintext.
+- **FrequencyAnalysis** – Estimates the key by analyzing letter frequency.
 
-## Concepts Demonstrated
-- File I/O
-- Character encoding
-- Modular arithmetic
-- Basic cryptanalysis techniques
+## Technical Concepts
+- File input/output and character processing in Java
+- Modular arithmetic for character shifting
+- Brute-force vs heuristic-based key recovery
+- Statistical reasoning in classical cryptography
 
-## Disclaimer
-This project is for educational purposes only.
-Caesar ciphers are not secure and should not be used in real applications.
+## How to Run
+Compile and run with a single command:
+```bash
+javac *.java && java Encrypt
